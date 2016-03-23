@@ -1,5 +1,3 @@
-var request = require('request');
-
 module.exports = {
   'Post Action': function( _browser ) {
     var time = +(new Date())

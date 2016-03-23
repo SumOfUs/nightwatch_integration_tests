@@ -13,7 +13,7 @@
     "host": "localhost",
     "port": 4444,
     "cli_args": {
-      "webdriver.chrome.driver": "~/Downloads/chromedrive",
+      "webdriver.chrome.driver": "chromedrive",
       "webdriver.ie.driver": ""
     }
   },
