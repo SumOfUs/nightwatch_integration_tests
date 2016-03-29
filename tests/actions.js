@@ -1,13 +1,11 @@
 module.exports = {
-  'Post Action': function( _browser ) {
-    var time = +(new Date())
-
-    _browser
+  'Post Action': function( browser ) {
+    browser
       .url('https://actions.sumofus.org/a/boycott-apple')
       .waitForElementVisible( 'body', 1000 )
       .verify.visible('input[name="name"]')
-      .setValue('input[name=name]', 'Test User')
-      .setValue('input[name=email]', 'omar+' + time + '@sumofus.org')
+      .setValue('input[name=name]',  'Omar')
+      .setValue('input[name=email]', 'omar@sumofus.org')
       .setValue('input[name=postal]', 'W1')
       .click('div.selectize-input')
       .waitForElementVisible('div.dropdown-active', 1000)
