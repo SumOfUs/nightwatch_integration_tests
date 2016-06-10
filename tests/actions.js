@@ -13,7 +13,7 @@ module.exports = {
       .waitForElementVisible('div.item', 2000)
       .assert.containsText('div.item', 'American Samoa')
       .click('button.petition-bar__submit-button')
-      .waitForElementVisible('.thank-you__cta', 2000)
+      .waitForElementVisible('.thank-you__thanks', 2000)
       .assert.elementPresent('a[type=f]')
       .assert.elementPresent('a[type=t]')
       .end()
